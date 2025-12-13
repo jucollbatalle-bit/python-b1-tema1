@@ -66,8 +66,10 @@ import numpy as np
 
 def results(list_numbers):
     desviacion_estandar = np.std(list_numbers)
-    result_1 = round(desviacion_estandar, 2)
+    Standard_deviation = round(desviacion_estandar, 2)
     promedio = np.mean(list_numbers)
-    result_2 = round(promedio, 2)
-    return result_1, result_2
-results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
+    Average = round(promedio, 2)
+    return Standard_deviation, Average
+average_val, std_dev_val = results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
+print(f"Average: {average_val}")
+print(f"Standard deviation: {std_dev_val}")
